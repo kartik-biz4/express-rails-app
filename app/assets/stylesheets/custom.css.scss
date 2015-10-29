@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 50px;
+  background-color: #eee;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bannerContainer{
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color: #fff;
+  font-weight: bold;
+}
+
+.headerBar{
+  background-color: #222370;
+  border-color : #222370;
+}
+
+.appLogo{
+  float: left;
+  margin-right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.appLogo:hover{
+  text-decoration: none;
+  color: #ccc;
+}
+
+.mainAreaHome{
+  background-image: url("http://www.panorel.com/wp-content/uploads/2014/02/034838571_prevstill.jpeg");
+  height: 700px;
+  margin-bottom: 0px;
+  font-family: gothic;
+}
+
+.mainAreaHome h1 {
+  color: #222370;
+  margin-top: 140px;
+}
+
+.mainAreaHome h2 {
+  color: #222370;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.footerStyle{
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  border-radius: 0px ;
+  background-color: #222370;
+  border-color : #222370;
+  margin-bottom: 0px;
+}
+
+.signUpBtn{
+  margin-top: 20px;
+  background-color : #222370;
+}
