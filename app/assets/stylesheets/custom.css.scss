@@ -87,3 +87,44 @@ textarea {
   margin-top: 20px;
   background-color : #222370;
 }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  //@include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.signInForm label{
+  padding-top : 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.signInForm input{
+  padding-top: 7px;
+  border-radius: 5px;
+  padding-bottom: 7px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.signUptext{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.signInSubmitBtn{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
