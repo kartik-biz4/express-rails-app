@@ -35,6 +35,8 @@ gem 'bootstrap-sass',       '3.2.0.0'
 
  gem "paperclip", "~> 4.3"
 
+ gem 'carrierwave'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
