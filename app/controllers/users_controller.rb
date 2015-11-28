@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     @user = User.new(params.require(:user).permit(:name, :email, :password, :password_confirmation, :avatar))
     Rails.logger.info(@user.errors.inspect) 
     if @user.save
+      log_in @user
       redirect_to @user
     else
       render 'new'
