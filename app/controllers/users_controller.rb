@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def show
     user_id = params[:id]
     @user = User.find(user_id)
+    @microposts = @user.microposts.paginate(page: params[:page], :per_page => 5)
   end
 
   def create
@@ -22,6 +23,10 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def edit
+    @user = User.find(params[:id])
   end
 
 end

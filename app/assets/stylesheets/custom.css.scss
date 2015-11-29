@@ -169,8 +169,104 @@ padding-left: 10px;
 
 .newUserLogin{
   padding-bottom: 170px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .loginHeading{
   text-align: center;
+}
+
+.bannerContainer h1{
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 8%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.profilePicMicropost{
+  background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 8%;
+}
+
+.user_info img{
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.user_info span{
+  margin-left: 70px;
+}
+
+.micropost_form textarea{
+  resize: none;
+  margin-left: 40px;
+  margin-top: 10px;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.micropost_form input{
+  width: 170px;
+  margin-left: 100px;
+  margin-top: 10px;
 }
