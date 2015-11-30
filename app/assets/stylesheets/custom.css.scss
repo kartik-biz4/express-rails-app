@@ -81,6 +81,7 @@ textarea {
   background-color: #222370;
   border-color : #222370;
   margin-bottom: 0px;
+  margin-top: 150px;
 }
 
 .signUpBtn{
@@ -246,7 +247,7 @@ span.picture {
 }
 
 .user_info img{
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 50px;
   width: 50%;
   border-radius: 50%;
@@ -269,4 +270,95 @@ span.picture {
   width: 170px;
   margin-left: 100px;
   margin-top: 10px;
+}
+
+.blankAvatar{
+  background-image: url("avatar_male_dark_on_clear_200x200.png");
+  
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    margin-left: 100px;
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+
+    img{
+      width: 8%;
+    }
+    a{
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 60px;
+    }
+  }
+  
+}
+
+.users.follow {
+  padding: 0;
+}
+
+.statsStyle{
+  padding-left: 45px;
+}
+
+.users.follow{
+  list-style-type: none;
+}
+
+.users.follow li{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.users.follow li img{
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 8%;
+  margin-right: 10px;
+
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  img {
+    margin: 1px 1px;
+    width: 25%;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.followStyle{
+  margin-left: 100px;
+  margin-bottom: 20px;
 }

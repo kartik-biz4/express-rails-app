@@ -3,12 +3,20 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= image_tag(@user.avatar) %>
+        <% if @user.avatar.present? %>
+          <%= image_tag(@user.avatar) %>
+        <% else %>
+          <%= image_tag "/uploads/user/avatar/blue-shadow-man-avatar.png"%>
+        <% end %>        
         <%= @user.name %>
       </h1>
     </section>
+    <section class="stats">
+      <%= render 'shared/stats' %>
+    </section>
   </aside>
   <div class="col-md-8">
+    <%= render 'follow_form' if logged_in? %>
     <% if @user.microposts.any? %>
       <h3>Views (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">

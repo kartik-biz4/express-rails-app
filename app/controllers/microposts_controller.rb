@@ -9,6 +9,7 @@ class MicropostsController < ApplicationController
     else
       @feed_items = []
       render 'static_content/home'
+      #redirect_to '/'
     end
   end
 
