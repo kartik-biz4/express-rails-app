@@ -12,13 +12,19 @@ Rails.application.routes.draw do
 
   get 'signIn' => 'users#new'
 
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 
   resources :microposts,          only: [:create, :destroy]
+
+  resources :relationships,       only: [:create, :destroy]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
