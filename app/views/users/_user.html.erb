@@ -1,0 +1,9 @@
+<li>
+      <% if user.avatar.present? %>
+        <%= image_tag(user.avatar)%>
+      <% else %>
+        <%= image_tag "/uploads/user/avatar/blue-shadow-man-avatar.png"%>
+      <% end %>
+      <%= link_to user.name, user %>
+      
+</li>
